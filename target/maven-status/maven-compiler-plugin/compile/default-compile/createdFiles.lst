@@ -1,1 +1,5 @@
 com\example\backend_SB_AOS\BackEndSbAosApplication.class
+com\example\backend_SB_AOS\repositories\CachorroRepository.class
+com\example\backend_SB_AOS\controllers\CachorroController.class
+com\example\backend_SB_AOS\models\Cachorro.class
+com\example\backend_SB_AOS\services\CachorroService.class

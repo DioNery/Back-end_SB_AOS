@@ -1,2 +1,5 @@
-C:\Users\aluno\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\BackEndSbAosApplication.java
-C:\Users\aluno\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\models\Cachorro.java
+C:\Users\flavi\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\controllers\CachorroController.java
+C:\Users\flavi\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\BackEndSbAosApplication.java
+C:\Users\flavi\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\repositories\CachorroRepository.java
+C:\Users\flavi\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\models\Cachorro.java
+C:\Users\flavi\Downloads\back-end_SB_AOS\src\main\java\com\example\backend_SB_AOS\services\CachorroService.java

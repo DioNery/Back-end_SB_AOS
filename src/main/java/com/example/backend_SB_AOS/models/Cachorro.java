@@ -7,8 +7,6 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Cachorro{
-
-     
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +16,8 @@ public class Cachorro{
     private String raca;
     private Boolean ehDomesticado;
     
+    public Cachorro() {
+    }
     public Cachorro(Long id, String nome, int idade, String raca, Boolean ehDomesticado) {
         this.id = id;
         this.nome = nome;
