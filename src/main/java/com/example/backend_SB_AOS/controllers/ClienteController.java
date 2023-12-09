@@ -2,53 +2,38 @@ package com.example.backend_SB_AOS.controllers;
 
 import com.example.backend_SB_AOS.models.Cliente;
 import com.example.backend_SB_AOS.services.ClienteService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/petshop/clientes")
 public class ClienteController {
 
-    private ClienteService clienteService;
+    private final ClienteService clienteService;
+
+    public ClienteController(ClienteService clienteService) {
+        this.clienteService = clienteService;
+    }
 
     @GetMapping
-    public List<Cliente> getAllClientes() {
-        return clienteService.findAll();
+    public List<Cliente> listarClientes() {
+        return clienteService.listarClientes();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Cliente> getClienteById(@PathVariable Long id) {
-        return clienteService.findById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+    public Optional<Cliente> obterClientePorId(@PathVariable Long id) {
+        return clienteService.obterClientePorId(id);
     }
 
     @PostMapping
-    public Cliente createCliente(@RequestBody Cliente cliente) {
-        return clienteService.save(cliente);
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<Cliente> updateCliente(@PathVariable Long id, @RequestBody Cliente clienteDetails) {
-        return clienteService.findById(id)
-                .map(cliente -> {
-                    cliente.setNome(clienteDetails.getNome());
-                    cliente.setEmail(clienteDetails.getEmail());
-                    cliente.setTelefone(clienteDetails.getTelefone());
-                    return ResponseEntity.ok(clienteService.save(cliente));
-                })
-                .orElse(ResponseEntity.notFound().build());
+    public Cliente salvarCliente(@RequestBody Cliente cliente) {
+        return clienteService.salvarCliente(cliente);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteCliente(@PathVariable Long id) {
-        return clienteService.findById(id)
-                .map(cliente -> {
-                    clienteService.delete(id);
-                    return ResponseEntity.ok().build();
-                })
-                .orElse(ResponseEntity.notFound().build());
+    public void deletarCliente(@PathVariable Long id) {
+        clienteService.deletarCliente(id);
     }
 }
