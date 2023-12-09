@@ -2,7 +2,6 @@ package com.example.backend_SB_AOS.controllers;
 
 import com.example.backend_SB_AOS.models.Recepcionista;
 import com.example.backend_SB_AOS.services.RecepcionistaService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ public class RecepcionistaController {
 
     private final RecepcionistaService recepcionistaService;
 
-    @Autowired
     public RecepcionistaController(RecepcionistaService recepcionistaService) {
         this.recepcionistaService = recepcionistaService;
     }

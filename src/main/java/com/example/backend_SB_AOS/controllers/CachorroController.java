@@ -2,7 +2,6 @@ package com.example.backend_SB_AOS.controllers;
 
 import com.example.backend_SB_AOS.models.Cachorro;
 import com.example.backend_SB_AOS.services.CachorroService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +13,6 @@ public class CachorroController {
 
     private final CachorroService cachorroService;
 
-    @Autowired
     public CachorroController(CachorroService cachorroService) {
         this.cachorroService = cachorroService;
     }

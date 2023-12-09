@@ -22,7 +22,7 @@ public class Recepcionista {
     private String telefone;
 
    
-    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "recepcionista", cascade = CascadeType.ALL)
     private List<Cliente> clientes;
     @ManyToOne
     @JoinColumn(name = "estabelecimento")

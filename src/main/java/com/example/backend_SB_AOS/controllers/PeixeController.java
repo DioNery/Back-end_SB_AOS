@@ -2,7 +2,6 @@ package com.example.backend_SB_AOS.controllers;
 
 import com.example.backend_SB_AOS.models.Peixe;
 import com.example.backend_SB_AOS.services.PeixeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ public class PeixeController {
 
     private final PeixeService peixeService;
 
-    @Autowired
     public PeixeController(PeixeService peixeService) {
         this.peixeService = peixeService;
     }

@@ -2,7 +2,6 @@ package com.example.backend_SB_AOS.controllers;
 
 import com.example.backend_SB_AOS.models.Estabelecimento;
 import com.example.backend_SB_AOS.services.EstabelecimentoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ public class EstabelecimentoController {
 
     private final EstabelecimentoService estabelecimentoService;
 
-    @Autowired
     public EstabelecimentoController(EstabelecimentoService estabelecimentoService) {
         this.estabelecimentoService = estabelecimentoService;
     }

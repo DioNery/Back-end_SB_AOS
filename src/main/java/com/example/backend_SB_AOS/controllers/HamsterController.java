@@ -2,7 +2,6 @@ package com.example.backend_SB_AOS.controllers;
 
 import com.example.backend_SB_AOS.models.Hamster;
 import com.example.backend_SB_AOS.services.HamsterService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ public class HamsterController {
 
     private final HamsterService hamsterService;
 
-    @Autowired
     public HamsterController(HamsterService hamsterService) {
         this.hamsterService = hamsterService;
     }
