@@ -19,10 +19,10 @@ public class Hamster {
     private Boolean ehDomesticado;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_hamsters")
+    @JoinColumn(name = "cliente")
     private Cliente cliente;
     @ManyToOne
-    @JoinColumn(name = "estabelecimento_hamsters")
+    @JoinColumn(name = "estabelecimento")
     private Estabelecimento estabelecimento;
 
     public Hamster() {

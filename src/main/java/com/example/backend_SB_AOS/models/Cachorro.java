@@ -19,10 +19,10 @@ public class Cachorro{
     private Boolean ehDomesticado;
     
     @ManyToOne
-    @JoinColumn(name = "cliente_cachorros")
+    @JoinColumn(name = "cliente")
     private Cliente cliente;
     @ManyToOne
-    @JoinColumn(name = "estabelecimento_cachorros")
+    @JoinColumn(name = "estabelecimento")
     private Estabelecimento estabelecimento;
 
     public Cachorro() {

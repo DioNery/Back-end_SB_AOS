@@ -19,10 +19,10 @@ public class Peixe {
     private Boolean ehAguaDoce;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_peixes")
+    @JoinColumn(name = "cliente")
     private Cliente cliente;
     @ManyToOne
-    @JoinColumn(name = "estabelecimento_peixes")
+    @JoinColumn(name = "estabelecimento")
     private Estabelecimento estabelecimento;
 
     public Peixe() {

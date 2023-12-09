@@ -22,14 +22,15 @@ public class Cliente {
     private String email;
     private String telefone;
 
-    @OneToMany(mappedBy = "gatos", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Gato> gatos;
-    @OneToMany(mappedBy = "peixes", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Peixe> peixes;
-    @OneToMany(mappedBy = "cachorros", cascade = CascadeType.ALL)
-    private List<Cachorro> cachorros;
-    @OneToMany(mappedBy = "hamsters", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Hamster> hamsters;
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    private List<Cachorro> cachorros;
+    
     @ManyToOne
     @JoinColumn(name = "recepcionista")
     private Recepcionista recepcionista;

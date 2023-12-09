@@ -17,15 +17,15 @@ public class Estabelecimento {
     private String nome;
     private String endereco;
 
-    @OneToMany(mappedBy = "estabelecimento_gatos", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "estabelecimento", cascade = CascadeType.ALL)
     private List<Gato> gatos;
-    @OneToMany(mappedBy = "estabelecimento_peixes", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "estabelecimento", cascade = CascadeType.ALL)
     private List<Peixe> peixes;
-    @OneToMany(mappedBy = "estabelecimento_cachorros", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "estabelecimento", cascade = CascadeType.ALL)
     private List<Cachorro> cachorros;
-    @OneToMany(mappedBy = "estabelecimento_hamsters", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "estabelecimento", cascade = CascadeType.ALL)
     private List<Hamster> hamsters;
-    @OneToMany(mappedBy = "estabelecimento_recepcionistas", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "estabelecimento", cascade = CascadeType.ALL)
     private List<Recepcionista> recepcionistas;
 
 
