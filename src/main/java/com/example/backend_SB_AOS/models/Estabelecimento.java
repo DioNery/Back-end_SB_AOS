@@ -1,5 +1,5 @@
 package com.example.backend_SB_AOS.models;
-
+//Importando os modulos
 import java.util.List;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
