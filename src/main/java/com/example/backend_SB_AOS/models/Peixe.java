@@ -8,7 +8,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
-public class Peixe {
+public class Peixe { //Criei a classe Peixe
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,43 +36,43 @@ public class Peixe {
         this.ehAguaDoce = ehAguaDoce;
     }
 
-    public Long getId() {
+    public Long getId() { //GET ID
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id) { //SET ID
         this.id = id;
     }
 
-    public String getNome() {
+    public String getNome() { //GET NOME
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome) { //SET NOME
         this.nome = nome;
     }
 
-    public String getEspecie() {
+    public String getEspecie() { //PEGAR ESPECIE
         return especie;
     }
 
-    public void setEspecie(String especie) {
+    public void setEspecie(String especie) { // SETAR UM ESPECIE
         this.especie = especie;
     }
 
-    public int getTamanho() {
+    public int getTamanho() { // PEGAR TAMANHO
         return tamanho;
     }
 
-    public void setTamanho(int tamanho) {
+    public void setTamanho(int tamanho) { // SETAR UM TAMANHO
         this.tamanho = tamanho;
     }
 
-    public Boolean getEhAguaDoce() {
+    public Boolean getEhAguaDoce() { //  EH DE AGUA DOCE
         return ehAguaDoce;
     }
 
-    public void setEhAguaDoce(Boolean ehAguaDoce) {
+    public void setEhAguaDoce(Boolean ehAguaDoce) { //SETAR SE EH AGUA DOCE
         this.ehAguaDoce = ehAguaDoce;
     }
 
